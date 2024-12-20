@@ -16,12 +16,31 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <120>;
             hold-trigger-key-positions = <13 14 15 16 17 18 19 20 21 22>;
             quick-tap-ms = <(-1)>;
             require-prior-idle-ms = <(-1)>;
             flavor = "balanced";
             hold-while-undecided;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        number_selector {
+            bindings = <&to 1>;
+            key-positions = <2 3 4 1>;
+        };
+
+        default_selector {
+            bindings = <&to 0>;
+            key-positions = <13 14 15 16>;
+        };
+
+        special_selector {
+            bindings = <&to 2>;
+            key-positions = <7 8 9 10>;
         };
     };
 
@@ -37,7 +56,7 @@
 
             bindings = <
 &kp ESCAPE  &kp Q                   &kp W                     &kp E                 &kp R                     &kp T    &kp Y      &kp U                      &kp I                  &kp O                      &kp P                       &kp BSPC
-&kp LCTRL   &homerowL LEFT_SHIFT A  &homerowL LEFT_CONTROL S  &homerowL LEFT_ALT D  &homerowL LEFT_COMMAND F  &kp G    &kp H      &homerowL RIGHT_COMMAND J  &homerowL RIGHT_ALT K  &homerowL RIGHT_CONTROL L  &homerowL RIGHT_SHIFT SEMI  &kp ENTER
+&kp TAB     &homerowL LEFT_SHIFT A  &homerowL LEFT_CONTROL S  &homerowL LEFT_ALT D  &homerowL LEFT_COMMAND F  &kp G    &kp H      &homerowL RIGHT_COMMAND J  &homerowL RIGHT_ALT K  &homerowL RIGHT_CONTROL L  &homerowL RIGHT_SHIFT SEMI  &kp ENTER
 &kp LSHFT   &kp Z                   &kp X                     &kp C                 &kp V                     &kp B    &kp N      &kp M                      &kp COMMA              &kp DOT                    &kp MINUS                   &kp SLASH
                                                               &mo 1                 &kp SPACE                 &mo 2    &kp ENTER  &kp SPACE                  &kp BACKSPACE
             >;
@@ -51,9 +70,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp NUMBER_1        &kp N2            &kp N3                &kp N4                &kp N5       &kp N6    &kp N7                        &kp N8                        &kp N9                             &kp N0                   &kp BSPC
-&trans     &kp LC(LEFT_SHIFT)  &kp LEFT_CONTROL  &kp LS(RC(LEFT_ALT))  &kp LS(LEFT_COMMAND)  &trans       &kp LEFT  &homerowL RIGHT_COMMAND DOWN  &homerowL RIGHT_ALT UP_ARROW  &homerowL RC(RIGHT_CONTROL) RIGHT  &kp LC(LG(RIGHT_SHIFT))  &trans
-&kp LSHFT  &kp LEFT_CONTROL    &trans            &trans                &trans                &to 3        &trans    &trans                        &trans                        &trans                             &trans                   &trans
+&kp TAB    &kp NUMBER_1        &kp N2            &kp N3                &kp N4                &kp N5       &kp N6    &kp N7                        &kp N8                        &kp N9                         &kp N0           &kp BSPC
+&trans     &kp LC(LEFT_SHIFT)  &kp LEFT_CONTROL  &kp LS(RC(LEFT_ALT))  &kp LS(LEFT_COMMAND)  &trans       &kp LEFT  &homerowL RIGHT_COMMAND DOWN  &homerowL RIGHT_ALT UP_ARROW  &homerowL RIGHT_CONTROL RIGHT  &kp RIGHT_SHIFT  &trans
+&kp LSHFT  &kp LEFT_CONTROL    &trans            &trans                &trans                &to 3        &trans    &trans                        &trans                        &trans                         &trans           &trans
                                                  &kp LGUI              &trans                &kp SPACE    &kp RET   &trans                        &kp RALT
             >;
         };
