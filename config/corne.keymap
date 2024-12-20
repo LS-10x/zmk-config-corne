@@ -70,10 +70,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp NUMBER_1        &kp N2            &kp N3                &kp N4                &kp N5       &kp N6    &kp N7                        &kp N8                        &kp N9                         &kp N0        &kp BSPC
-&trans     &kp LC(LEFT_SHIFT)  &kp LEFT_CONTROL  &kp LS(RC(LEFT_ALT))  &kp LS(LEFT_COMMAND)  &trans       &kp LEFT  &homerowL RIGHT_COMMAND DOWN  &homerowL RIGHT_ALT UP_ARROW  &homerowL RIGHT_CONTROL RIGHT  &kp QUESTION  &trans
-&kp LSHFT  &kp LEFT_CONTROL    &trans            &trans                &trans                &to 3        &trans    &trans                        &trans                        &trans                         &trans        &trans
-                                                 &kp LGUI              &trans                &kp SPACE    &kp RET   &trans                        &kp RALT
+&kp TAB    &kp NUMBER_1        &kp N2            &kp N3                &kp N4                &kp N5    &kp N6    &kp N7                        &kp N8                        &kp N9                         &kp N0        &kp BSPC
+&trans     &kp LC(LEFT_SHIFT)  &kp LEFT_CONTROL  &kp LS(RC(LEFT_ALT))  &kp LS(LEFT_COMMAND)  &trans    &kp LEFT  &homerowL RIGHT_COMMAND DOWN  &homerowL RIGHT_ALT UP_ARROW  &homerowL RIGHT_CONTROL RIGHT  &kp QUESTION  &trans
+&kp LSHFT  &kp LEFT_CONTROL    &trans            &kp LC(C)             &kp LC(V)             &to 3     &trans    &trans                        &trans                        &trans                         &trans        &trans
+                                                 &trans                &kp SPACE             &trans    &kp RET   &kp SPACE                     &trans
             >;
         };
 
@@ -85,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL           &kp AT            &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans             &trans            &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                                &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL           &kp AT            &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans    &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans             &trans            &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                                &trans    &kp SPACE  &kp SPACE    &kp RET    &kp SPACE  &trans
             >;
         };
 
