@@ -42,6 +42,16 @@
             bindings = <&to 2>;
             key-positions = <7 8 9 10>;
         };
+
+        question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <36 13 11>;
+        };
+
+        aeee {
+            bindings = <&kp N7>;
+            key-positions = <3 13>;
+        };
     };
 
     keymap {
@@ -85,10 +95,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL           &kp AT            &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans    &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans             &trans            &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                                &trans    &kp SPACE  &kp SPACE    &kp RET    &kp SPACE  &trans
+&kp TAB    &kp EXCL           &kp AT            &kp HASH  &kp DLLR   &kp PRCNT       &kp AMPERSAND  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp BSPC
+&kp LCTRL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans    &trans     &kp ASTERISK    &kp MINUS      &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH      &kp GRAVE
+&kp LSHFT  &trans             &trans            &trans    &trans     &trans          &kp UNDER      &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE      &kp TILDE
+                                                &trans    &kp SPACE  &kp SPACE       &kp RET        &kp SPACE  &trans
             >;
         };
 
