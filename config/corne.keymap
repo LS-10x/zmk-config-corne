@@ -49,7 +49,7 @@
         };
 
         aeee {
-            bindings = <&kp N7>;
+            bindings = <&kp ä>;
             key-positions = <3 13>;
         };
     };
