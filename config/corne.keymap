@@ -47,11 +47,6 @@
             bindings = <&kp QUESTION>;
             key-positions = <36 13 11>;
         };
-
-        aeee {
-            bindings = <&kp ä>;
-            key-positions = <3 13>;
-        };
     };
 
     keymap {
