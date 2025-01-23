@@ -12,8 +12,8 @@ manifest:
       
       # LS Test to integreate zmk helpers 
     - name: zmk-helpers
-      remote: zmkfirmware
+      remote: urob
       revision: main
-      path: modules/zmk-helpers
+
   self:
     path: config
