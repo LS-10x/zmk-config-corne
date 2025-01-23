@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 // LS 23.01.2025 advice from zmk docs
+#define HOST_OS 2
 #include "zmk-helpers/helper.h"
 // Source desired key-position labels
 #include "zmk-helpers/key-labels/glove80.h"
