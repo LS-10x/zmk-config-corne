@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 // LS 23.01.2025 advice from zmk docs
-#include "zmk-helpers/helper.h"
+// #include "zmk-helpers/helper.h"
 // Source desired key-position labels
-#include "zmk-helpers/key-labels/glove80.h"
+// #include "zmk-helpers/key-labels/glove80.h"
 // Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/german.dtsi"
+// #include "zmk-helpers/unicode-chars/german.dtsi"
 
 
 / {
@@ -36,9 +36,9 @@
 
     // LS 23.01.2025 try at german umlauts:
     //                name     unshifted         shifted
-    ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
-    ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
-    ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
+//    ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
+//    ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
+//    ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
 
 
     combos {

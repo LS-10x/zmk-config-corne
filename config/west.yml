@@ -9,5 +9,11 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+      
+      # LS Test to integreate zmk helpers 
+    - name: zmk-helpers
+      remote: zmkfirmware
+      revision: main
+      path: modules/zmk-helpers
   self:
     path: config
