@@ -4,6 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    # LS second remote for the zmk helpers
     - name: urob
       url-base: https://github.com/urob
   projects:
@@ -11,7 +12,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml    
-      # LS Test to integreate zmk helpers 
+      # LS second remote for the zmk helpers
     - name: zmk-helpers
       remote: urob
       revision: main
