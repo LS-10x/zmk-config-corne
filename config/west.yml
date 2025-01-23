@@ -11,9 +11,9 @@ manifest:
       import: app/west.yml
       
       # LS Test to integreate zmk helpers 
-    - name: zmk-helpers
-      remote: urob
-      revision: main
+    #- name: zmk-helpers
+    #  remote: urob
+    #  revision: main
 
   self:
     path: config
