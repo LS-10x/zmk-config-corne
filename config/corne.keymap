@@ -34,13 +34,6 @@
         };
     };
 
-    macros {
-    // LS 23.01.2025 try at german umlauts:
-    //                name     unshifted         shifted
-        ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
-        ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
-        ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
-    };
 
     combos {
         compatible = "zmk,combos";
@@ -65,6 +58,14 @@
             key-positions = <36 13 11>;
         };
     };
+
+
+    // LS 23.01.2025 try at german umlauts:
+    //                name     unshifted         shifted
+        ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
+        ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
+        ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
+    
 
     keymap {
         compatible = "zmk,keymap";
