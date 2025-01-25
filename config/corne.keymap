@@ -9,7 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 // LS 23.01.2025 advice from zmk docs
-//#include <zmk/unicode.h> this seemed to create problems
+#include <zmk/unicode.h> 
+
 #define HOST_OS 2
 #include "zmk-helpers/helper.h"
 // Source desired key-position labels
@@ -67,7 +68,7 @@
     //    ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
     //    ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
     //    ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
-    ZMK_UNICODE_PAIR(   de_ae,      KP_N0, KP_N2, KP_N2, KP_N8,    KP_N0, KP_N1, KP_N9, KP_N6) // ä/Ä
+    //    ZMK_UNICODE_PAIR(   de_ae,      KP_N0, KP_N2, KP_N2, KP_N8,    KP_N0, KP_N1, KP_N9, KP_N6) // ä/Ä
     
 
     keymap {
