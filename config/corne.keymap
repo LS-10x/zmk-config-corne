@@ -69,6 +69,7 @@
     //    ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
     //    ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
     //    ZMK_UNICODE_PAIR(   de_ae,      KP_N0, KP_N2, KP_N2, KP_N8,    KP_N0, KP_N1, KP_N9, KP_N6) // ä/Ä
+    ZMK_UNICODE_PAIR(de_ae, N0, N0, A, N0, N0, N0, A, N0) // Maps to lowercase and uppercase "a"
 
     
 
