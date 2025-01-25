@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 // LS 23.01.2025 advice from zmk docs
-#include <zmk/unicode.h> 
+// #include <zmk/unicode.h> 
 
 #define HOST_OS 2
 #include "zmk-helpers/helper.h"
@@ -69,6 +69,15 @@
     //    ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
     //    ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
     //    ZMK_UNICODE_PAIR(   de_ae,      KP_N0, KP_N2, KP_N2, KP_N8,    KP_N0, KP_N1, KP_N9, KP_N6) // ä/Ä
+
+    / {
+    zmk,unicode-map {
+        compatible = "zmk,unicode-map";
+        de_ae = <0x00E4 0x00C4>; // ä and Ä
+        de_oe = <0x00F6 0x00D6>; // ö and Ö
+        de_ue = <0x00FC 0x00DC>; // ü and Ü
+    };
+};
     
 
     keymap {
