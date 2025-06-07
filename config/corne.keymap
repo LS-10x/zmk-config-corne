@@ -138,7 +138,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, E, 1)
         layer_4 {
             bindings = <
 &kp ESCAPE    &kp ESCAPE    &trans  &trans  &trans  &trans    &kp C_BRI_DEC  &kp C_BRI_UP  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
-&kp TAB       &kp TAB       &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &trans           &trans
+&kp TAB       &kp de_sz       &de_ae  &de_oe  &de_ue  &euro_sign    &trans         &trans        &trans      &trans        &trans           &trans
 &kp CAPSLOCK  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &trans           &trans
                                     &trans  &trans  &trans    &trans         &trans        &trans
             >;
