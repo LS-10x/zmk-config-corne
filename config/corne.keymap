@@ -18,6 +18,8 @@
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
+// Test to include the pairs before the /{} as suggested on reddit
+ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 ) 
 
 / {
     behaviors {
