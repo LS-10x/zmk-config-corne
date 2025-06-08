@@ -81,13 +81,13 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, 1) // ß
 			// │ SHFT   │   Z    │   X    │   C    │   V    │   B    │       │   N    │   M    │   ,    │   .    │   -    │  ESC   │
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
 			//                        ┌────────┬────────┬────────┐               ┌────────┬────────┬────────┐
-			//                        │  L1    │  L4    │  L2    │               │  SPC   │  ENT   │ BSPC   │
+			//                        │  L1    │  L4    │  L2    │               │  SPC   │  ENT   │   L5   │
 			//                        └────────┴────────┴────────┘               └────────┴────────┴────────┘
             bindings = <
 &kp ESCAPE  &kp Q                   &kp W                     &kp E                 &kp R                     &kp T    &kp Y      &kp U                      &kp I                  &kp O                      &kp BACKSPACE            &kp BSPC
 &kp TAB     &homerowL LEFT_SHIFT A  &homerowL LEFT_CONTROL S  &homerowL LEFT_ALT D  &homerowL LEFT_COMMAND F  &kp G    &kp H      &homerowL RIGHT_COMMAND J  &homerowL RIGHT_ALT K  &homerowL RIGHT_CONTROL L  &homerowL RIGHT_SHIFT P  &kp ENTER
 &kp LSHFT   &kp Z                   &kp X                     &kp C                 &kp V                     &kp B    &kp N      &kp M                      &kp COMMA              &kp DOT                    &kp MINUS                &kp SLASH
-                                                              &mo 1                 &mo 4                     &mo 2    &kp ENTER  &kp SPACE                  &kp BACKSPACE
+                                                              &mo 1                 &mo 4                     &mo 2    &kp ENTER  &kp SPACE                  &mo 5
             >;
         };
 
