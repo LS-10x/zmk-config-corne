@@ -18,7 +18,7 @@
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
-// Including the ZMK_Unicodea_pairs/single (before the /{} as suggested on reddit) to use German Umlaute and special characters
+// Including the ZMK_Unicodea_pairs/single for Umlaute and special characters
 ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 ) // ä, Ä
 ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 ) // ö, Ö
 ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C ) // ü, Ü
