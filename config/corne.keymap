@@ -81,13 +81,13 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 			// │ SHFT   │   Z    │   X    │   C    │   V    │   B    │       │   N    │   M    │   ,    │   .    │   -    │  ESC   │
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
 			//                        ┌────────┬────────┬────────┐               ┌────────┬────────┬────────┐
-			//                        │  L1    │  L4    │  L2    │               │  SPC   │  ENT   │   L5   │
+			//                        │  L5    │  L1    │  L2    │               │  SPC   │  ENT   │   L4   │
 			//                        └────────┴────────┴────────┘               └────────┴────────┴────────┘
             bindings = <
 &kp ESCAPE  &kp Q                   &kp W                     &kp E                 &kp R                     &kp T    &kp Y      &kp U                      &kp I                  &kp O                      &kp BACKSPACE            &kp BSPC
 &kp TAB     &homerowL LEFT_SHIFT A  &homerowL LEFT_CONTROL S  &homerowL LEFT_ALT D  &homerowL LEFT_COMMAND F  &kp G    &kp H      &homerowL RIGHT_COMMAND J  &homerowL RIGHT_ALT K  &homerowL RIGHT_CONTROL L  &homerowL RIGHT_SHIFT P  &kp ENTER
 &kp LSHFT   &kp Z                   &kp X                     &kp C                 &kp V                     &kp B    &kp N      &kp M                      &kp COMMA              &kp DOT                    &kp MINUS                &kp SLASH
-                                                              &mo 1                 &mo 4                     &mo 2    &kp ENTER  &kp SPACE                  &mo 5
+                                                              &mo 5                 &mo 1                     &mo 2    &kp ENTER  &kp SPACE                  &mo 4
             >;
         };
 
@@ -117,9 +117,9 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 			// ┌────────┬────────┬────────┬────────┬────────┬────────┐       ┌────────┬────────┬────────┬────────┬────────┬────────┐
 			// │  TAB   │   !    │   "    │   #    │   $    │   %    │       │   &    │   /    │   (    │   )    │  DEL   │  DEL   │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │ CTRL   │   @    │   '    │   =    │   +    │   *    │       │   ;    │   \    │   [    │   ]    │   ?    │   `    │
+			// │ CTRL   │   @    │   '    │   =    │   +    │   *    │       │   ;    │   \    │   [    │   ]    │   ?    │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │ SHFT   │   <    │   >    │   `    │   ~    │   ^    │       │   :    │   |    │   {    │   }    │   -    │   ~    │
+			// │ SHFT   │   <    │   >    │   `    │   ~    │   ^    │       │   :    │   |    │   {    │   }    │   -    │        │
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
 			//                        ┌────────┬────────┬────────┐               ┌────────┬────────┬────────┐
 			//                        │        │  SPC   │  SPC   │               │  RET   │  SPC   │  DEL   │
@@ -158,7 +158,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
             // ┌────────┬────────┬────────┬────────┬────────┬────────┐       ┌────────┬────────┬────────┬────────┬────────┬────────┐
 			// │ ESC    │ ESC    │        │        │        │        │       │ BRI-   │  BRI+  │  MUTE  │  VOL-  │  VOL+  │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │ TAB    │   ß    │   ä    │   ö    │   ü    │  €     │       │        │        │        │        │        │        │
+			// │ TAB    │  TAB   │        │        │        │        │       │        │        │        │        │        │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
 			// │ CAPS   │ CAPS   │        │        │        │        │       │        │        │        │        │        │        │
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
@@ -168,7 +168,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 
             bindings = <
 &kp ESCAPE    &kp ESCAPE    &trans  &trans  &trans  &trans    &kp C_BRI_DEC  &kp C_BRI_UP  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
-&kp TAB       &de_sz       &de_ae  &de_oe  &de_ue  &euro_sign    &trans         &trans        &trans      &trans        &trans           &trans
+&kp TAB       &kp TAB       &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &trans           &trans
 &kp CAPSLOCK  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &trans           &trans
                                     &trans  &trans  &trans    &trans         &trans        &trans
             >;
@@ -177,20 +177,20 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 
                 layer_5 {
             // ┌────────┬────────┬────────┬────────┬────────┬────────┐       ┌────────┬────────┬────────┬────────┬────────┬────────┐
-			// │        │        │        │    €   │        │        │       │        │    ü   │        │    ö   │        │        │
+			// │        │  ESC   │        │   €    │        │        │       │        │   Ü    │        │   Ö    │        │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │        │   ä    │   ß    │        │        │        │       │        │        │        │        │        │        │
+			// │        │   Ä    │   ß    │        │        │        │       │        │        │        │        │        │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │        │        │        │        │        │        │       │        │        │        │        │        │        │
+			// │        │  CAPS  │        │        │        │        │       │        │        │        │        │        │        │e
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
 			//                        ┌────────┬────────┬────────┐               ┌────────┬────────┬────────┐
 			//                        │        │        │        │               │        │        │        │
 			//                        └────────┴────────┴────────┘               └────────┴────────┴────────┘
 
             bindings = <
-&trans    &trans    &trans  &euro_sign  &trans  &trans      &trans     &de_ue        &trans      &de_oe        &trans           &trans
-&trans    &de_ae    &de_sz  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
-&trans    &trans    &trans  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
+&trans    &kp ESCAPE    &trans  &euro_sign  &trans  &trans      &trans     &de_ue        &trans      &de_oe        &trans           &trans
+&trans    &de_ae        &de_sz  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
+&trans    &kp CAPS      &trans  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
                             &trans      &trans  &trans      &trans     &trans        &trans
             >;
         };
