@@ -188,9 +188,9 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 			//                        └────────┴────────┴────────┘               └────────┴────────┴────────┘
 
             bindings = <
-&trans    &kp ESCAPE    &trans  &euro_sign  &trans  &trans      &trans     &de_ue        &trans      &de_oe        &trans           &trans
-&trans    &de_ae        &de_sz  &trans      &trans  &trans      &kp LEFT   &kp UP_ARROW  &kp DOWN    &kp RIGHT     &trans           &trans
-&trans    &kp CAPS      &trans  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
+&trans    &kp ESCAPE    &trans  &euro_sign  &trans  &trans      &trans     &de_ue     &trans        &de_oe        &trans           &trans
+&trans    &de_ae        &de_sz  &trans      &trans  &trans      &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT     &trans           &trans
+&trans    &kp CAPS      &trans  &trans      &trans  &trans      &trans     &trans     &trans        &trans        &trans           &trans
                             &trans      &trans  &trans      &trans     &trans        &trans
             >;
         };
