@@ -160,7 +160,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
 			// │ TAB    │  TAB   │        │        │        │        │       │        │        │        │        │        │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │ CAPS   │ CAPS   │        │        │        │        │       │        │        │        │        │        │        │
+			// │ CAPS   │ CAPS   │        │        │        │        │       │        │        │        │        │ZMK STD │        │
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
 			//                        ┌────────┬────────┬────────┐               ┌────────┬────────┬────────┐
 			//                        │        │        │        │               │        │        │        │
@@ -168,8 +168,8 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 
             bindings = <
 &kp ESCAPE    &kp ESCAPE    &trans  &trans  &trans  &trans    &kp C_BRI_DEC  &kp C_BRI_UP  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
-&kp TAB       &kp TAB       &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &trans           &trans
-&kp CAPSLOCK  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &trans           &trans
+&kp TAB       &kp TAB       &trans  &trans  &trans  &trans    &trans        &trans         &trans      &trans        &trans           &trans
+&kp CAPSLOCK  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &trans         &trans        &trans      &trans        &studio_unlock   &trans
                                     &trans  &trans  &trans    &trans         &trans        &trans
             >;
         };
@@ -179,9 +179,9 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
             // ┌────────┬────────┬────────┬────────┬────────┬────────┐       ┌────────┬────────┬────────┬────────┬────────┬────────┐
 			// │        │  ESC   │        │   €    │        │        │       │        │   Ü    │        │   Ö    │        │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │        │   Ä    │   ß    │        │        │        │       │        │        │        │        │        │        │
+			// │        │   Ä    │   ß    │        │        │        │       │ LEFT   │ DOWN   │   UP   │ RIGHT  │        │        │
 			// ├────────┼────────┼────────┼────────┼────────┼────────┤       ├────────┼────────┼────────┼────────┼────────┼────────┤
-			// │        │  CAPS  │        │        │        │        │       │        │        │        │        │        │        │e
+			// │        │  CAPS  │        │        │        │        │       │        │        │        │        │        │        │
 			// └────────┴────────┴────────┴────────┴────────┴────────┘       └────────┴────────┴────────┴────────┴────────┴────────┘
 			//                        ┌────────┬────────┬────────┐               ┌────────┬────────┬────────┐
 			//                        │        │        │        │               │        │        │        │
@@ -189,7 +189,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 
             bindings = <
 &trans    &kp ESCAPE    &trans  &euro_sign  &trans  &trans      &trans     &de_ue        &trans      &de_oe        &trans           &trans
-&trans    &de_ae        &de_sz  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
+&trans    &de_ae        &de_sz  &trans      &trans  &trans      &kp LEFT   &kp UP_ARROW  &kp DOWN    &kp RIGHT     &trans           &trans
 &trans    &kp CAPS      &trans  &trans      &trans  &trans      &trans     &trans        &trans      &trans        &trans           &trans
                             &trans      &trans  &trans      &trans     &trans        &trans
             >;
